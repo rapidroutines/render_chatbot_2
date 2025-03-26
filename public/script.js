@@ -1,5 +1,3 @@
-// script.js
-
 // Select DOM elements from the HTML
 const typingForm = document.querySelector(".typing-form");
 const chatContainer = document.querySelector(".chat-list");

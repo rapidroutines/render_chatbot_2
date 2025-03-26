@@ -6,7 +6,7 @@
 /* Basic body styling optimized for mobile */
 body {
   font-family: 'Poppins', sans-serif;
-  background: #000000;
+  background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,14 +22,15 @@ body {
   height: 80vh;
   max-height: 670px;
   margin: 0 auto;
-  border-radius: 18px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
   background: #f4f4f4;
   position: relative;
   overflow: hidden;
   touch-action: none;
   display: flex;
   flex-direction: column;
+  border-radius: 8px;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Title styling */
@@ -41,7 +42,7 @@ body {
   color: white;
   padding: 12px 0;
   background: #1E628C;
-  border-radius: 18px 18px 0 0;
+  border-radius: 8px 8px 0 0;
   margin: 0;
 }
 
@@ -122,7 +123,7 @@ body {
   padding: 10px 12px;
   background: #f4f4f4;
   border-top: 1px solid #e0e0e0;
-  border-radius: 0 0 18px 18px;
+  border-radius: 0 0 8px 8px;
 }
 
 /* Input field styling */
@@ -379,4 +380,73 @@ body {
 @keyframes fade-in {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+:root {
+  --primary-font: 'Playfair Display', serif;
+  --secondary-font: 'Lato', sans-serif;
+  --text-color: #333;
+  --light-text: #555;
+}
+
+body {
+  font-family: var(--secondary-font);
+  line-height: 1.6;
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.title {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.chat-list {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+}
+
+.typing-form {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.typing-input {
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  transition: border-color 0.2s ease;
+}
+
+.typing-input:focus {
+  outline: none;
+  border-color: #a0a0a0;
+}
+
+.typing-input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.button {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  margin-left: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.autocomplete-items {
+  font-family: var(--secondary-font);
 }
