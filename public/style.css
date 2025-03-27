@@ -61,6 +61,7 @@ body {
   align-items: flex-start;
   margin: 8px 0;
   animation: fade-in 0.3s ease;
+  width: 100%; /* Ensure message takes full width */
 }
 
 .outgoing {
@@ -104,12 +105,19 @@ body {
 .outgoing .text {
   background: #1E628C;
   border-radius: 16px 16px 0 16px;
-  margin-right: 25px;
+  margin-right: 0; /* Remove right margin to align with edge */
 }
 
 .incoming .text {
   background: #1e1e1e;
   border-radius: 16px 16px 16px 0;
+}
+
+/* Adjust message content for outgoing messages */
+.outgoing .message-content {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 /* Typing form container - fixed at bottom */
