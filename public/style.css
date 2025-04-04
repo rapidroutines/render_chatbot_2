@@ -28,8 +28,6 @@ body {
   touch-action: none;
   display: flex;
   flex-direction: column;
-  border-radius: 8px;
-  border: 1px solid black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
