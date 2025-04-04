@@ -27,6 +27,8 @@ body {
   overflow: hidden;
   touch-action: none;
   display: flex;
+  border-radius: 8px;
+  border: 1px solid black;
   flex-direction: column;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
